@@ -61,7 +61,7 @@ window.addEventListener('load', () => {
     targets: '#preloader',
     opacity: 0,
     duration: 1000,
-    delay: 400,
+    delay: 500,
     complete: () => {
       document.getElementById('preloader').style.display = 'none';
     }
