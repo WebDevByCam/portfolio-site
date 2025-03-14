@@ -5,6 +5,10 @@
   --purple: #641dba;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -179,8 +183,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  opacity: 0;
-  transform: translateY(60px);
+  /* opacity: 0;
+  transform: translateY(60px); */
   transition: all 1s ease;
 }
 
