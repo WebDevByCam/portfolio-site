@@ -107,3 +107,26 @@ mobileNavLinks.forEach(link => {
     mobileNav.classList.remove('active');
   });
 });
+
+
+
+
+
+
+
+// SAY HELLO BUTTON
+
+  const sayHelloBtn = document.getElementById('say-hello');
+  const options = document.getElementById('contact-options');
+
+  sayHelloBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevents the default link behavior
+    options.classList.toggle('active');
+  });
+
+  // Optional: Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!sayHelloBtn.contains(e.target) && !options.contains(e.target)) {
+      options.classList.remove('active');
+    }
+  });
