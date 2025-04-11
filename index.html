@@ -1,192 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Web Design and Development">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="Cam">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Web Dev By Cam</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="png" href="favicon.png">
-</head>
-<body>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-85G0M3X967"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-85G0M3X967');
-  </script>
-
-  <div id="preloader">
-    <div class="preloader-container">
-      <svg id="hexagon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-
-        <path
-          id="hex-path"
-          stroke="#64FFDA"
-          stroke-width="5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          fill="none"
-          d="M 50,5
-             L 11,27
-             L 11,72
-             L 50,95
-             L 89,73
-             L 89,28 Z" />
-        
-        <text id="hex-letter"
-          x="49"
-          y="54"
-          text-anchor="middle"
-          dominant-baseline="middle"
-          fill="#64FFDA"
-          font-family="system-ui, Calibre, sans-serif"
-          font-size="48"
-          font-weight="700"
-          opacity="0">C</text>
-      </svg>
-    </div>
-  </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert web design and development by Cam. Build responsive, fast websites with HTML, CSS, and JavaScript. Contact me today!">
+    <meta name="keywords" content="web design, web development, responsive websites, HTML, CSS, JavaScript, custom websites, freelance web developer">
+    <meta name="author" content="Cam">
   
-  <header>
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="#" class="logo">Web Dev By Cam</a>
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        
-        <nav class="mobile-nav" id="mobileNav">
-          <ul>
+    <title>Web Dev By Cam | Web Design & Development Services</title>
+  
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Cam Dev">
+    <link rel="manifest" href="/images/site.webmanifest">
+  
+    <!-- Open Graph -->
+    <meta property="og:title" content="Web Dev By Cam - Expert Web Design & Development">
+    <meta property="og:description" content="Cam builds responsive, custom websites with HTML, CSS, and JavaScript. Explore my portfolio!">
+    <meta property="og:image" content="https://webdevbycam.com/images/og-image.jpg">
+    <meta property="og:url" content="https://webdevbycam.com">
+    <meta property="og:type" content="website">
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Web Dev By Cam - Expert Web Design & Development">
+    <meta name="twitter:description" content="Cam builds responsive, custom websites with HTML, CSS, and JavaScript. Explore my portfolio!">
+    <meta name="twitter:image" content="https://webdevbycam.com/images/favicon-96x96.png">
+  
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Cam",
+      "jobTitle": "Web Developer",
+      "url": "https://webdevbycam.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/WebDevByCam",
+        "https://github.com/WebDevByCam"
+      ],
+      "description": "Cam specializes in web design and development, creating responsive websites with HTML, CSS, and JavaScript."
+    }
+    </script>
+  
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-85G0M3X967"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-85G0M3X967');
+    </script>
+
+    <div id="preloader">
+      <div class="preloader-container">
+        <svg id="hexagon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+          <path
+            id="hex-path"
+            stroke="#64FFDA"
+            stroke-width="5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            fill="none"
+            d="M 50,5
+              L 11,27
+              L 11,72
+              L 50,95
+              L 89,73
+              L 89,28 Z" />
+          
+          <text id="hex-letter"
+            x="49"
+            y="54"
+            text-anchor="middle"
+            dominant-baseline="middle"
+            fill="#64FFDA"
+            font-family="system-ui, Calibre, sans-serif"
+            font-size="48"
+            font-weight="700"
+            opacity="0">C</text>
+        </svg>
+      </div>
+    </div>
+    
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <a href="#" class="logo">Web Dev By Cam</a>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
+          <nav class="mobile-nav" id="mobileNav">
+            <ul>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+          <ul class="nav-links">
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
-        </nav>
-        <ul class="nav-links">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </div>
+      </nav>
+    </header>  
+
+    <header class="hero">
+      <p class="intro">Hi, my name is</p>
+      <h1 class="name">Cam.</h1>
+      <h2 class="role">I craft stunning front-end experiences.</h2>
+      <p class="description">
+        I'm a front-end web developer passionate about creating interactive, accessible, and smooth web interfaces.
+      </p>
+      <a href="#projects" class="btn">Check out my work</a>
+    </header>
+
+
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p>
+        I'm a front-end developer who loves building elegant web experiences using HTML, CSS, and JavaScript. I enjoy setting up clean interfaces and smooth animations that enhance user engagement.
+      </p>
+      <p>
+        Technologies I work with:
+      </p>
+      <ul class="tech-list">
+        <li>HTML5</li>
+        <li>CSS3 / SCSS</li>
+        <li>JavaScript (ES6+)</li>
+        <li>React</li>
+        <li>Git & GitHub</li>
+        <li>Responsive Design</li>
+        <li>UI/UX Principles</li>
+        <li>WordPress</li>
+        <li>Elementor - Yoast SEO</li>
+        <li>Figma</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2 class="section-title">Some Projects I've Built</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Portfolio Website</h3>
+          <p>A clean personal portfolio site</p>
+        </div>
+        <ul class="tech-stack">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
         </ul>
+        <div class="project-links">
+          <a href="https://www.webdevbycam.com/" target="_blank">Live</a>
+          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
+        </div>
       </div>
-    </nav>
-  </header>  
 
-  <header class="hero">
-    <p class="intro">Hi, my name is</p>
-    <h1 class="name">Cam.</h1>
-    <h2 class="role">I craft stunning front-end experiences.</h2>
-    <p class="description">
-      I'm a front-end web developer passionate about creating interactive, accessible, and smooth web interfaces.
-    </p>
-    <a href="#projects" class="btn">Check out my work</a>
-  </header>
-
-
-
-<section id="about" class="about">
-  <h2 class="section-title">About Me</h2>
-  <div class="about-content">
-    <p>
-      I'm a front-end developer who loves building elegant web experiences using HTML, CSS, and JavaScript. I enjoy setting up clean interfaces and smooth animations that enhance user engagement.
-    </p>
-    <p>
-      Technologies I work with:
-    </p>
-    <ul class="tech-list">
-      <li>HTML5</li>
-      <li>CSS3 / SCSS</li>
-      <li>JavaScript (ES6+)</li>
-      <li>Git & GitHub</li>
-      <li>Responsive Design</li>
-      <li>UI/UX Principles</li>
-      <li>MySQL</li>
-      <li>PHP</li>
-    </ul>
-  </div>
-</section>
-
-<section id="projects" class="projects">
-  <h2 class="section-title">Some Projects I've Built</h2>
-  <div class="projects-grid">
-
-    <div class="project-card">
-      <div class="project-header">
-        <h3>Portfolio Website</h3>
-        <p>A clean personal portfolio site</p>
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Wonder Nails - Spa</h3>
+          <p>Eye-catching spa web page</p>
+        </div>
+        <ul class="tech-stack">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>API</li>
+        </ul>
+        <div class="project-links">
+          <a href="http://www.wondervillavicencio.com/" target="_blank">Live</a>
+          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
+        </div>
       </div>
-      <ul class="tech-stack">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-      <div class="project-links">
-        <a href="https://www.webdevbycam.com/" target="_blank">Live</a>
-        <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Bloom Luxury - Spa</h3>
+          <p>Very neat, responsive and user-friendly spa landing page</p>
+        </div>
+        <ul class="tech-stack">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>API</li>
+        </ul>
+        <div class="project-links">
+          <a href="http://www.bloomspavillavicencio.com/" target="_blank">Live</a>
+          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Bella Suiza - Hotel</h3>
+          <p>Informative landing page</p>
+        </div>
+        <ul class="tech-stack">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>API</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" target="_blank">Live</a>
+          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Pescador - Restaurant</h3>
+          <p>Well detailed restaurant project</p>
+        </div>
+        <ul class="tech-stack">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>API</li>
+        </ul>
+        <div class="project-links">
+          <a href="" target="_blank">Live</a>
+          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Coming Soon...</h3>
+          <p></p>
+        </div>
+        <ul class="tech-stack">
+          <li>...</li>
+          <li>...</li>
+          <li>...</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" target="_blank">Live</a>
+          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Coming soon...</h3>
+          <p></p>
+        </div>
+        <ul class="tech-stack">
+          <li>...</li>
+          <li>...</li>
+          <li>...</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" target="_blank">Live</a>
+          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-text">
+      I'm always open to collaborating on interesting projects or just having a friendly tech chat. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+    </p>
+    <div class="contact-container">
+      <a href="#" class="contact-btn" id="say-hello">Say Hello!</a>
+      <div class="contact-options" id="contact-options">
+        <a href="mailto:webdevbycam@gmail.com" class="option-btn" target="_blank" aria-label="Email Me">Email Me</a>
+        <a href="https://wa.me/573025287134" class="option-btn" target="_blank" aria-label="Text Me">Text Me</a>
       </div>
     </div>
+  </section>
 
-    <div class="project-card">
-      <div class="project-header">
-        <h3>Wonder Nails - Spa</h3>
-        <p>Very neat, responsive and user-friendly Spa Website</p>
-      </div>
-      <ul class="tech-stack">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>API</li>
-      </ul>
-      <div class="project-links">
-        <a href="http://www.wondervillavicencio.com/" target="_blank">Live</a>
-        <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <h2 class="section-title">Get In Touch</h2>
-  <p class="contact-text">
-    I'm always open to collaborating on interesting projects or just having a friendly tech chat. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-  </p>
-  <div class="contact-container">
-    <a href="#" class="contact-btn" id="say-hello">Say Hello!</a>
-    <div class="contact-options" id="contact-options">
-      <a href="mailto:webdevbycam@gmail.com" class="option-btn" target="_blank" aria-label="Email Me">Email Me</a>
-      <a href="https://wa.me/573025287134" class="option-btn" target="_blank" aria-label="Text Me">Text Me</a>
-      <!-- <a href="https://twitter.com/yourusername" class="option-btn">X</a> -->
-    </div>
-  </div>
-</section>
+  <footer class="footer">
+    <p>Designed & Built by WebDevByCam</p>
+    <p>© <span id="year"></span> All rights reserved.</p>
+  </footer>
 
 
-<!-- <section id="contact" class="contact" style="opacity: 0; transform: translateY(40px);">
-  <h2 class="section-title">Get In Touch</h2>
-  <p class="contact-text">
-    I'm always open to collaborating on interesting projects or just having a friendly tech chat. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-  </p>
-  <a href="mailto:webdevbycam@gmail.com" class="contact-btn">Say Hello!</a>
-</section> -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 
-
-
-<footer class="footer">
-  <p>Designed & Built by WebDevByCam</p>
-  <p>© <span id="year"></span> All rights reserved.</p>
-</footer>
-
-
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-
-</body>
+  </body>
 </html>
