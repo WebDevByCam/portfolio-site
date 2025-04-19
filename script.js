@@ -287,14 +287,5 @@ document.addEventListener('DOMContentLoaded', () => {
       formMessage.className = 'form-message error';
       return;
     }
-
-    e.preventDefault();
-    formMessage.textContent = translations[savedLang]['contact.form.success'];
-    formMessage.className = 'form-message success';
-    contactForm.reset();
-
-    setTimeout(() => {
-      contactForm.submit();
-    }, 2000);
   });
 });
