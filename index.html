@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Expert web design and development by Cam. Build responsive, fast websites with HTML, CSS, and JavaScript. Contact me today!">
-    <meta name="keywords" content="web design, web development, responsive websites, HTML, CSS, JavaScript, custom websites, freelance web developer">
+    <meta name="description" content="Servicios expertos de diseño y desarrollo web en Villavicencio, Colombia. Crea sitios web responsivos y rápidos con HTML, CSS y JavaScript. ¡Contáctame hoy!">
+    <meta name="keywords" content="diseño web Villavicencio, desarrollo web Colombia, sitios web responsivos, desarrollador web freelance, HTML, CSS, JavaScript">
     <meta name="author" content="Cam">
-  
-    <title>Web Dev By Cam | Web Design & Development Services</title>
-  
+
+    <title>Web Dev By Cam | Diseño y Desarrollo Web en Villavicencio</title>
+
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
@@ -16,54 +16,67 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <meta name="apple-mobile-web-app-title" content="Cam Dev">
     <link rel="manifest" href="/images/site.webmanifest">
-  
+
+    <!-- Hreflang para SEO multilingüe -->
+    <link rel="alternate" hreflang="es" href="https://webdevbycam.com/es">
+    <link rel="alternate" hreflang="en" href="https://webdevbycam.com/en">
+    <link rel="alternate" hreflang="x-default" href="https://webdevbycam.com/es">
+
     <!-- Open Graph -->
-    <meta property="og:title" content="Web Dev By Cam - Expert Web Design & Development">
-    <meta property="og:description" content="Cam builds responsive, custom websites with HTML, CSS, and JavaScript. Explore my portfolio!">
+    <meta property="og:title" content="Web Dev By Cam - Diseño y Desarrollo Web en Villavicencio">
+    <meta property="og:description" content="Cam crea sitios web responsivos y personalizados en Villavicencio, Colombia, con HTML, CSS y JavaScript. ¡Explora mi portafolio!">
     <meta property="og:image" content="https://webdevbycam.com/images/og-image.jpg">
     <meta property="og:url" content="https://webdevbycam.com">
     <meta property="og:type" content="website">
-  
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Web Dev By Cam - Expert Web Design & Development">
-    <meta name="twitter:description" content="Cam builds responsive, custom websites with HTML, CSS, and JavaScript. Explore my portfolio!">
+    <meta name="twitter:title" content="Web Dev By Cam - Diseño y Desarrollo Web en Villavicencio">
+    <meta name="twitter:description" content="Cam crea sitios web responsivos y personalizados en Villavicencio, Colombia, con HTML, CSS y JavaScript. ¡Explora mi portafolio!">
     <meta name="twitter:image" content="https://webdevbycam.com/images/favicon-96x96.png">
-  
+
     <!-- Schema Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Cam",
-      "jobTitle": "Web Developer",
+      "@type": "LocalBusiness",
+      "name": "Web Dev By Cam",
+      "description": "Servicios de diseño y desarrollo web en Villavicencio, Colombia.",
       "url": "https://webdevbycam.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Villavicencio",
+        "addressRegion": "Meta",
+        "addressCountry": "CO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 4.1351345,
+        "longitude": -73.6400881
+      },
+      "telephone": "+573025287134",
       "sameAs": [
         "https://www.linkedin.com/in/WebDevByCam",
         "https://github.com/WebDevByCam"
-      ],
-      "description": "Cam specializes in web design and development, creating responsive websites with HTML, CSS, and JavaScript."
+      ]
     }
     </script>
-  
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-85G0M3X967"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-85G0M3X967');
     </script>
 
     <div id="preloader">
       <div class="preloader-container">
         <svg id="hexagon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-
           <path
             id="hex-path"
             stroke="#64FFDA"
@@ -71,14 +84,9 @@
             stroke-linecap="round"
             stroke-linejoin="round"
             fill="none"
-            d="M 50,5
-              L 11,27
-              L 11,72
-              L 50,95
-              L 89,73
-              L 89,28 Z" />
-          
-          <text id="hex-letter"
+            d="M 50,5 L 11,27 L 11,72 L 50,95 L 89,73 L 89,28 Z" />
+          <text
+            id="hex-letter"
             x="49"
             y="54"
             text-anchor="middle"
@@ -91,7 +99,7 @@
         </svg>
       </div>
     </div>
-    
+
     <header>
       <nav class="navbar">
         <div class="nav-container">
@@ -101,204 +109,218 @@
             <span></span>
             <span></span>
           </div>
-          
           <nav class="mobile-nav" id="mobileNav">
             <ul>
-              <li><a href="#about" class="nav-link">About</a></li>
-              <li><a href="#projects" class="nav-link">Projects</a></li>
-              <li><a href="#contact" class="nav-link">Contact</a></li>
+              <li><a href="#acerca" class="nav-link" data-i18n="nav.about">Acerca</a></li>
+              <li><a href="#servicios" class="nav-link" data-i18n="nav.services">Servicios</a></li>
+              <li><a href="#proyectos" class="nav-link" data-i18n="nav.projects">Proyectos</a></li>
+              <li><a href="#contacto" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
             </ul>
+            <div class="language-selector">
+              <select id="language-switch" aria-label="Seleccionar idioma">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+              </select>
+            </div>
           </nav>
           <ul class="nav-links">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#acerca" class="nav-link" data-i18n="nav.about">Acerca</a></li>
+            <li><a href="#servicios" class="nav-link" data-i18n="nav.services">Servicios</a></li>
+            <li><a href="#proyectos" class="nav-link" data-i18n="nav.projects">Proyectos</a></li>
+            <li><a href="#contacto" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+            <li>
+              <select id="language-switch-desktop" class="language-selector" aria-label="Seleccionar idioma">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+              </select>
+            </li>
           </ul>
         </div>
       </nav>
-    </header>  
-
-    <header class="hero">
-      <p class="intro">Hi, my name is</p>
-      <h1 class="name">Cam.</h1>
-      <h2 class="role">I craft stunning front-end experiences.</h2>
-      <p class="description">
-        I'm a front-end web developer passionate about creating interactive, accessible, and smooth web interfaces.
-      </p>
-      <a href="#projects" class="btn">Check out my work</a>
     </header>
 
+    <main>
+      <section class="hero">
+        <p class="intro" data-i18n="hero.intro">¡Hola! Soy</p>
+        <h1 class="name">Cam</h1>
+        <h2 class="role" data-i18n="hero.role">Desarrollador Web Freelance en Villavicencio, Colombia</h2>
+        <p class="description" data-i18n="hero.description">
+          Creo sitios web modernos, responsivos y optimizados que impulsan tu negocio. Especializado en diseño web, desarrollo front-end y soluciones personalizadas con HTML, CSS, JavaScript y WordPress, ayudo a empresas en Villavicencio y toda Colombia a destacar en línea. ¿Listo para llevar tu presencia digital al siguiente nivel?
+        </p>
+        <a href="#proyectos" class="btn" data-i18n="hero.cta">Explora Mis Proyectos</a>
+      </section>
 
-
-  <section id="about" class="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-content">
-      <p>
-        I'm a front-end developer who loves building elegant web experiences using HTML, CSS, and JavaScript. I enjoy setting up clean interfaces and smooth animations that enhance user engagement.
-      </p>
-      <p>
-        Technologies I work with:
-      </p>
-      <ul class="tech-list">
-        <li>HTML5</li>
-        <li>CSS3 / SCSS</li>
-        <li>JavaScript (ES6+)</li>
-        <li>React</li>
-        <li>Git & GitHub</li>
-        <li>Responsive Design</li>
-        <li>UI/UX Principles</li>
-        <li>WordPress</li>
-        <li>Elementor - Yoast SEO</li>
-        <li>Figma</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="projects" class="projects">
-    <h2 class="section-title">Some Projects I've Built</h2>
-    <div class="projects-grid">
-
-      <div class="project-card">
-        <div class="project-header">
-          <h3>Portfolio Website</h3>
-          <p>A clean personal portfolio site</p>
+      <section id="acerca" class="about">
+        <h2 class="section-title" data-i18n="about.title">Sobre Mí</h2>
+        <div class="about-content">
+          <p data-i18n="about.text1">
+            Soy Cam, un desarrollador web front-end con base en Villavicencio, Colombia, apasionado por crear experiencias digitales únicas. Con más de X años de experiencia, diseño y desarrollo sitios web responsivos, rápidos y optimizados para SEO que ayudan a negocios locales a destacar en el mercado digital. Mi enfoque combina creatividad, tecnología moderna y un profundo entendimiento de las necesidades de mis clientes.
+          </p>
+          <p data-i18n="about.text2">
+            Trabajo con tecnologías de vanguardia para ofrecer soluciones personalizadas, desde páginas web corporativas hasta tiendas en línea. Mi objetivo es que cada proyecto no solo sea visualmente atractivo, sino también funcional y fácil de usar. Vivo en Villavicencio, pero atiendo clientes en toda Colombia, siempre con un enfoque en la calidad y la satisfacción del cliente.
+          </p>
+          <p data-i18n="about.text3">Algunas de las tecnologías que domino:</p>
+          <ul class="tech-list">
+            <li>HTML5</li>
+            <li>CSS3 / SCSS</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <li>Git & GitHub</li>
+            <li>Diseño Responsivo</li>
+            <li>Principios UI/UX</li>
+            <li>WordPress</li>
+            <li>Elementor - Yoast SEO</li>
+            <li>Figma</li>
+          </ul>
+          <p data-i18n="about.cta">
+            ¿Quieres un sitio web que realmente conecte con tu audiencia? <a href="#contacto" class="btn">Contáctame hoy</a> y hablemos de tu proyecto.
+          </p>
         </div>
-        <ul class="tech-stack">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-        <div class="project-links">
-          <a href="https://www.webdevbycam.com/" target="_blank">Live</a>
-          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
-        </div>
-      </div>
+      </section>
 
-      <div class="project-card">
-        <div class="project-header">
-          <h3>Wonder Nails - Spa</h3>
-          <p>Eye-catching spa web page</p>
+      <section id="servicios" class="services">
+        <h2 class="section-title" data-i18n="services.title">Servicios de Desarrollo Web en Villavicencio</h2>
+        <div class="services-content">
+          <div class="service-item">
+            <h3 data-i18n="services.design.title">Diseño Web Personalizado</h3>
+            <p data-i18n="services.design.text">
+              Creo sitios web únicos y responsivos que reflejan la identidad de tu marca. Utilizando HTML, CSS y JavaScript, diseño interfaces modernas y optimizadas para todos los dispositivos, perfectas para negocios en Villavicencio y más allá.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3 data-i18n="services.development.title">Desarrollo Front-End</h3>
+            <p data-i18n="services.development.text">
+              Desarrollo interfaces interactivas y accesibles con tecnologías como React y JavaScript moderno. Mis soluciones garantizan una experiencia de usuario fluida, ideal para startups y empresas que buscan destacar en línea.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3 data-i18n="services.wordpress.title">Sitios Web con WordPress</h3>
+            <p data-i18n="services.wordpress.text">
+              Construyo sitios web profesionales con WordPress, optimizados con Yoast SEO y personalizados con Elementor. Desde blogs hasta tiendas en línea, ofrezco soluciones escalables para empresas en Colombia.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3 data-i18n="services.seo.title">Optimización SEO</h3>
+            <p data-i18n="services.seo.text">
+              Mejoro la visibilidad de tu sitio web en Google con estrategias de SEO local y técnico. Desde la optimización de palabras clave hasta la velocidad de carga, aseguro que tu negocio en Villavicencio sea encontrado fácilmente.
+            </p>
+          </div>
+          <p data-i18n="services.cta">
+            ¿Listo para transformar tu presencia digital? <a href="#contacto" class="btn">Solicita una Cotización</a>
+          </p>
         </div>
-        <ul class="tech-stack">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>API</li>
-        </ul>
-        <div class="project-links">
-          <a href="http://www.wondervillavicencio.com/" target="_blank">Live</a>
-          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
-        </div>
-      </div>
+      </section>
 
-      <div class="project-card">
-        <div class="project-header">
-          <h3>Bloom Luxury - Spa</h3>
-          <p>Very neat, responsive and user-friendly spa landing page</p>
+      <section id="proyectos" class="projects">
+        <h2 class="section-title" data-i18n="projects.title">Proyectos de Desarrollo Web</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects.portfolio.title">Portafolio Personal</h3>
+              <p data-i18n="projects.portfolio.description">
+                Diseñé y desarrollé mi propio sitio web como portafolio, un proyecto responsivo que muestra mis habilidades en HTML, CSS y JavaScript. Este sitio está optimizado para SEO y ofrece una experiencia de usuario fluida, ideal para destacar en Villavicencio.
+              </p>
+            </div>
+            <ul class="tech-stack">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://www.webdevbycam.com/" target="_blank" data-i18n="projects.live">Ver en Vivo</a>
+              <a href="https://github.com/WebDevByCam/portfolio" target="_blank">GitHub</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects.wonder.title">Wonder Nails - Spa</h3>
+              <p data-i18n="projects.wonder.description">
+                Desarrollé un sitio web moderno y responsivo para Wonder Nails Spa en Villavicencio. Con un diseño atractivo, animaciones suaves y una API de reservas integrada, este proyecto mejora la presencia digital del negocio y facilita la interacción con los clientes.
+              </p>
+            </div>
+            <ul class="tech-stack">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>API</li>
+            </ul>
+            <div class="project-links">
+              <a href="http://www.wondervillavicencio.com/" target="_blank" data-i18n="projects.live">Ver en Vivo</a>
+              <a href="https://github.com/WebDevByCam/wonder-nails" target="_blank">GitHub</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects.bloom.title">Bloom Luxury - Spa</h3>
+              <p data-i18n="projects.bloom.description">
+                Creé una landing page elegante y responsiva para Bloom Luxury Spa en Villavicencio. Este proyecto destaca por su diseño limpio, navegación intuitiva y optimización para dispositivos móviles, ayudando al spa a atraer más clientes locales.
+              </p>
+            </div>
+            <ul class="tech-stack">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>API</li>
+            </ul>
+            <div class="project-links">
+              <a href="http://www.bloomspavillavicencio.com/" target="_blank" data-i18n="projects.live">Ver en Vivo</a>
+              <a href="https://github.com/WebDevByCam/bloom-spa" target="_blank">GitHub</a>
+            </div>
+          </div>
         </div>
-        <ul class="tech-stack">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>API</li>
-        </ul>
-        <div class="project-links">
-          <a href="http://www.bloomspavillavicencio.com/" target="_blank">Live</a>
-          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
+      </section>
+
+      <section id="contacto" class="contact">
+        <h2 class="section-title" data-i18n="contact.title">Contáctame Hoy</h2>
+        <p class="contact-text" data-i18n="contact.text">
+          ¿Buscas un desarrollador web en Villavicencio para crear o mejorar tu sitio web? Estoy aquí para ayudarte. Ofrezco soluciones personalizadas de diseño y desarrollo web que impulsan tu negocio. Escríbeme por correo, WhatsApp o llámame, y empecemos a trabajar en tu proyecto. ¡Responderé lo antes posible!
+        </p>
+        <div class="contact-container">
+          <a href="#" class="contact-btn" id="say-hello" data-i18n="contact.cta">Inicia Tu Proyecto</a>
+          <div class="contact-options" id="contact-options">
+            <a href="mailto:webdevbycam@gmail.com" class="option-btn" target="_blank" data-i18n="contact.email">Enviar Correo</a>
+            <a href="https://wa.me/573025287134" class="option-btn" target="_blank" data-i18n="contact.whatsapp">Enviar Mensaje por WhatsApp</a>
+          </div>
         </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header">
-          <h3>Bella Suiza - Hotel</h3>
-          <p>Informative landing page</p>
+        <div class="contact-info" data-i18n="contact.info">
+          <p>Web Dev By Cam<br>Villavicencio, Meta, Colombia<br>
         </div>
-        <ul class="tech-stack">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>API</li>
-        </ul>
-        <div class="project-links">
-          <a href="#" target="_blank">Live</a>
-          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
+        <div class="contact-form-container">
+          <h3 data-i18n="contact.form.title">O Envíame un Mensaje Directo</h3>
+          <form id="contact-form" data-netlify="true" netlify-honeypot="bot-field" method="POST">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hidden">
+              <label>No llenes esto: <input name="bot-field"></label>
+            </p>
+            <div class="form-group">
+              <label for="name" data-i18n="contact.form.name">Nombre *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="contact.form.email">Correo Electrónico *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" data-i18n="contact.form.phone">Teléfono *</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="contact.form.message">Mensaje *</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn" data-i18n="contact.form.submit">Enviar Mensaje</button>
+            <p id="form-message" class="form-message"></p>
+          </form>
         </div>
-      </div>
+      </section>
+    </main>
 
-      <div class="project-card">
-        <div class="project-header">
-          <h3>Pescador - Restaurant</h3>
-          <p>Well detailed restaurant project</p>
-        </div>
-        <ul class="tech-stack">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>API</li>
-        </ul>
-        <div class="project-links">
-          <a href="" target="_blank">Live</a>
-          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
-        </div>
-      </div>
+    <footer class="footer">
+      <p data-i18n="footer.text">Diseñado y Desarrollado por Web Dev By Cam | Villavicencio, Colombia</p>
+      <p>© <span id="year"></span> Todos los derechos reservados.</p>
+    </footer>
 
-      <div class="project-card">
-        <div class="project-header">
-          <h3>Coming Soon...</h3>
-          <p></p>
-        </div>
-        <ul class="tech-stack">
-          <li>...</li>
-          <li>...</li>
-          <li>...</li>
-        </ul>
-        <div class="project-links">
-          <a href="#" target="_blank">Live</a>
-          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header">
-          <h3>Coming soon...</h3>
-          <p></p>
-        </div>
-        <ul class="tech-stack">
-          <li>...</li>
-          <li>...</li>
-          <li>...</li>
-        </ul>
-        <div class="project-links">
-          <a href="#" target="_blank">Live</a>
-          <a href="https://github.com/WebDevByCam" target="_blank">GitHub</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2 class="section-title">Get In Touch</h2>
-    <p class="contact-text">
-      I'm always open to collaborating on interesting projects or just having a friendly tech chat. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-    </p>
-    <div class="contact-container">
-      <a href="#" class="contact-btn" id="say-hello">Say Hello!</a>
-      <div class="contact-options" id="contact-options">
-        <a href="mailto:webdevbycam@gmail.com" class="option-btn" target="_blank" aria-label="Email Me">Email Me</a>
-        <a href="https://wa.me/573025287134" class="option-btn" target="_blank" aria-label="Text Me">Text Me</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>Designed & Built by WebDevByCam</p>
-    <p>© <span id="year"></span> All rights reserved.</p>
-  </footer>
-
-
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
   </body>
 </html>
