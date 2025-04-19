@@ -273,33 +273,28 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contact-form');
   const formMessage = document.getElementById('form-message');
 
-  // Depuración: Verificar si el formulario existe
-  if (!contactForm) {
-    console.error('Formulario no encontrado. Asegúrate de que el ID "contact-form" esté en el HTML.');
-  } else {
-    console.log('Formulario encontrado:', contactForm);
-  }
-
   contactForm.addEventListener('submit', (e) => {
-    console.log('Evento submit disparado'); // Depuración
 
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const phone = document.getElementById('phone').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    console.log('Valores del formulario:', { name, email, phone, message }); // Depuración
-
+    // Validación de campos requeridos
     if (!name || !email || !phone || !message) {
       e.preventDefault();
-      console.log('Validación fallida: Campos requeridos vacíos');
       formMessage.textContent = translations[savedLang]['contact.form.error'];
       formMessage.className = 'form-message error';
       return;
     }
 
-    console.log('Validación exitosa, enviando formulario a Netlify...');
-    // Permitimos que Netlify maneje el envío de forma nativa
-    // No usamos e.preventDefault(), dejando que el formulario se envíe
+    e.preventDefault();
+    formMessage.textContent = translations[savedLang]['contact.form.success'];
+    formMessage.className = 'form-message success';
+    contactForm.reset();
+
+    setTimeout(() => {
+      contactForm.submit();
+    }, 2000);
   });
 });

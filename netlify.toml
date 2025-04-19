@@ -1,12 +1,9 @@
-[[redirects]]
-  from = "/thank-you.html"
-  to = "/thank-you.html"
-  status = 200
-
+# Excluir solicitudes POST de la redirección para que Netlify Forms las maneje
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  conditions = { "Method" = ["GET"] }
 
 [build]
   command = ""
