@@ -282,32 +282,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = document.getElementById('message').value.trim();
 
     if (!name || !email || !phone || !message) {
+      e.preventDefault();
       formMessage.textContent = translations[savedLang]['contact.form.error'];
       formMessage.className = 'form-message error';
       return;
-    }
-
-    const formData = new FormData(contactForm);
-
-    try {
-      const response = await fetch('/', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-
-      if (response.ok) {
-        formMessage.textContent = translations[savedLang]['contact.form.success'];
-        formMessage.className = 'form-message success';
-        contactForm.reset();
-      } else {
-        throw new Error('Error al enviar el formulario');
-      }
-    } catch (error) {
-      formMessage.textContent = translations[savedLang]['contact.form.error'];
-      formMessage.className = 'form-message error';
     }
   });
 });
