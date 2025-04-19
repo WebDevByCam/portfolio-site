@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'contact.email': 'Enviar Correo',
       'contact.whatsapp': 'Enviar Mensaje por WhatsApp',
       'contact.info': 'Web Dev By Cam<br>Villavicencio, Meta, Colombia',
-      'contact.form.title': 'O Envíame un Mensaje Directo',
+      'contact.form.title': 'Envíame un Mensaje Directo',
       'contact.form.name': 'Nombre *',
       'contact.form.email': 'Correo Electrónico *',
       'contact.form.phone': 'Teléfono *',
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'contact.email': 'Email Me',
       'contact.whatsapp': 'Text Me',
       'contact.info': 'Web Dev By Cam<br>Villavicencio, Meta, Colombia',
-      'contact.form.title': 'Or Send Me a Direct Message',
+      'contact.form.title': 'Send Me a Direct Message',
       'contact.form.name': 'Name *',
       'contact.form.email': 'Email *',
       'contact.form.phone': 'Phone (Optional)',
@@ -268,46 +268,46 @@ document.addEventListener('DOMContentLoaded', () => {
       options.classList.remove('active');
     }
   });
-});
 
-// Validación y manejo del formulario
-const contactForm = document.getElementById('contact-form');
-const formMessage = document.getElementById('form-message');
+  // Validación y manejo del formulario
+  const contactForm = document.getElementById('contact-form');
+  const formMessage = document.getElementById('form-message');
 
-contactForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const message = document.getElementById('message').value.trim();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const message = document.getElementById('message').value.trim();
 
-  if (!name || !email || !phone || !message) {
-    formMessage.textContent = translations[savedLang]['contact.form.error'];
-    formMessage.className = 'form-message error';
-    return;
-  }
-
-  const formData = new FormData(contactForm);
-
-  try {
-    const response = await fetch('/', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-
-    if (response.ok) {
-      formMessage.textContent = translations[savedLang]['contact.form.success'];
-      formMessage.className = 'form-message success';
-      contactForm.reset();
-    } else {
-      throw new Error('Error al enviar el formulario');
+    if (!name || !email || !phone || !message) {
+      formMessage.textContent = translations[savedLang]['contact.form.error'];
+      formMessage.className = 'form-message error';
+      return;
     }
-  } catch (error) {
-    formMessage.textContent = translations[savedLang]['contact.form.error'];
-    formMessage.className = 'form-message error';
-  }
+
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        formMessage.textContent = translations[savedLang]['contact.form.success'];
+        formMessage.className = 'form-message success';
+        contactForm.reset();
+      } else {
+        throw new Error('Error al enviar el formulario');
+      }
+    } catch (error) {
+      formMessage.textContent = translations[savedLang]['contact.form.error'];
+      formMessage.className = 'form-message error';
+    }
+  });
 });
