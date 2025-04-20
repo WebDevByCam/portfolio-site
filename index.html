@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,12 +24,16 @@
     <link rel="alternate" hreflang="x-default" href="https://webdevbycam.com/es">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Web Dev By Cam - Diseño y Desarrollo Web en Villavicencio">
-    <meta property="og:description" content="Cam crea sitios web responsivos y personalizados en Villavicencio, Colombia, con HTML, CSS y JavaScript. ¡Explora mi portafolio!">
-    <meta property="og:image" content="https://webdevbycam.com/images/og-image.jpg">
-    <meta property="og:url" content="https://webdevbycam.com">
+    <link rel="canonical" href="https://webdevbycam.com">
+    <meta property="og:locale" content="es_ES">
     <meta property="og:type" content="website">
-
+    <meta property="og:title" content="Web Dev By Cam - Diseño y Desarrollo Web en Villavicencio">
+    <meta property="og:description" content="En Cam creamos sitios web responsivos y personalizados en Villavicencio, Colombia, con HTML, CSS y JavaScript. ¡Explora mi portafolio!">
+    <meta property="og:url" content="https://webdevbycam.com">
+    <meta property="og:site_name" content="Web Dev By Cam">
+    <meta property="og:image" content="https://webdevbycam.com/images/favicon-96x96.png">
+    <meta property="og:image:type" content="image/png">
+    
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Web Dev By Cam - Diseño y Desarrollo Web en Villavicencio">
@@ -142,25 +146,25 @@
 
     <main>
       <section class="hero">
-        <p class="intro" data-i18n="hero.intro">¡Hola! Soy</p>
-        <h1 class="name">Cam - Diseñador y Desarrollador de Páginas Web</h1>
+        <p class="intro" data-i18n="hero.intro">¡Hola! Somos</p>
+        <h1 class="name" data-i18n="hero.name">Cam - Diseño y Desarrollo de Páginas Web</h1>
         <h2 class="role" data-i18n="hero.role">en Villavicencio, Colombia</h2>
         <p class="description" data-i18n="hero.description">
-          Creo sitios web modernos, responsivos y optimizados que impulsan tu negocio. Especializado en diseño web, desarrollo front-end y soluciones personalizadas con HTML, CSS, JavaScript y WordPress, ayudo a empresas en Villavicencio y toda Colombia a destacar en línea. ¿Listo para llevar tu presencia digital al siguiente nivel?
+          Creamos sitios web modernos, responsivos y optimizados que impulsan tu negocio. Especializados en diseño web, desarrollo front-end y soluciones personalizadas con HTML, CSS, JavaScript y WordPress; ayudamos a empresas en Villavicencio y toda Colombia a destacar en línea. ¿Listo para llevar tu presencia digital al siguiente nivel?
         </p>
-        <a href="#proyectos" class="btn" data-i18n="hero.cta">Explora Mis Proyectos</a>
+        <a href="#proyectos" class="btn" data-i18n="hero.cta">Explora Nuestros Proyectos</a>
       </section>
 
       <section id="acerca" class="about">
-        <h2 class="section-title" data-i18n="about.title">Sobre Mí</h2>
+        <h2 class="section-title" data-i18n="about.title">Sobre Nosotros</h2>
         <div class="about-content">
           <p data-i18n="about.text1">
-            Soy Cam, un desarrollador web front-end con base en Villavicencio, Colombia, apasionado por crear experiencias digitales únicas. Con más de X años de experiencia, diseño y desarrollo sitios web responsivos, rápidos y optimizados para SEO que ayudan a negocios locales a destacar en el mercado digital. Mi enfoque combina creatividad, tecnología moderna y un profundo entendimiento de las necesidades de mis clientes.
+            Somos Cam, desarrollo web y diseño con base en Villavicencio, Colombia. Apasionados por crear experiencias digitales únicas. Con nuestros años de experiencia, diseñamos y desarrollamos sitios web responsivos, rápidos y optimizados para SEO que ayudan a negocios locales a destacar en el mercado digital. Nuestro enfoque combina creatividad, tecnología moderna y un profundo entendimiento de las necesidades de nuestros clientes.
           </p>
           <p data-i18n="about.text2">
-            Trabajo con tecnologías de vanguardia para ofrecer soluciones personalizadas, desde páginas web corporativas hasta tiendas en línea. Mi objetivo es que cada proyecto no solo sea visualmente atractivo, sino también funcional y fácil de usar. Vivo en Villavicencio, pero atiendo clientes en toda Colombia, siempre con un enfoque en la calidad y la satisfacción del cliente.
+            Trabajamos con tecnologías de vanguardia para ofrecer soluciones personalizadas, desde páginas web corporativas hasta tiendas en línea. Nuestro objetivo es que cada proyecto no solo sea visualmente atractivo, sino también funcional y fácil de usar. Estamos ubicados en Villavicencio, pero atendemos clientes en toda Colombia, siempre con un enfoque en la calidad y la satisfacción del cliente.
           </p>
-          <p data-i18n="about.text3">Algunas de las tecnologías que domino:</p>
+          <p data-i18n="about.text3">Algunas de las tecnologías con las que trabajamos:</p>
           <ul class="tech-list">
             <li>HTML5</li>
             <li>CSS3 / SCSS</li>
@@ -173,53 +177,57 @@
             <li>Elementor - Yoast SEO</li>
             <li>Figma</li>
           </ul>
-          <p data-i18n="about.cta">
-            ¿Quieres un sitio web que realmente conecte con tu audiencia? <a href="#contacto" class="btn">Contáctame hoy</a> y hablemos de tu proyecto.
+          <p data-i18n="about.cta" style="margin-top: 100px;">
+            ¿Quieres un sitio web que realmente conecte con tu audiencia? Contáctanos hoy y hablemos sobre tu proyecto.
           </p>
+          <a href="#contacto" class="btn" data-i18n="about.btn">Contáctanos hoy</a>
         </div>
       </section>
 
       <section id="servicios" class="services">
-        <h2 class="section-title" data-i18n="services.title">Servicios de Desarrollo Web en Villavicencio</h2>
+        <h2 class="section-title" data-i18n="services.title">Servicios de Diseño y Desarrollo Web en Villavicencio</h2>
         <div class="services-content">
           <div class="service-item">
             <h3 data-i18n="services.design.title">Diseño Web Personalizado</h3>
             <p data-i18n="services.design.text">
-              Creo sitios web únicos y responsivos que reflejan la identidad de tu marca. Utilizando HTML, CSS y JavaScript, diseño interfaces modernas y optimizadas para todos los dispositivos, perfectas para negocios en Villavicencio y más allá.
+              Creamos sitios web únicos y responsivos que reflejan la identidad de tu marca. Utilizando HTML, CSS y JavaScript, diseño interfaces modernas y optimizadas para todos los dispositivos, perfectas para negocios en Villavicencio y más allá.
             </p>
           </div>
           <div class="service-item">
             <h3 data-i18n="services.development.title">Desarrollo Front-End</h3>
             <p data-i18n="services.development.text">
-              Desarrollo interfaces interactivas y accesibles con tecnologías como React y JavaScript moderno. Mis soluciones garantizan una experiencia de usuario fluida, ideal para startups y empresas que buscan destacar en línea.
+              Desarrollamos interfaces interactivas y accesibles con tecnologías como React y JavaScript moderno. Nuestras soluciones garantizan una experiencia de usuario fluida, ideal para startups y empresas que buscan destacar en línea.
             </p>
           </div>
           <div class="service-item">
             <h3 data-i18n="services.wordpress.title">Sitios Web con WordPress</h3>
             <p data-i18n="services.wordpress.text">
-              Construyo sitios web profesionales con WordPress, optimizados con Yoast SEO y personalizados con Elementor. Desde blogs hasta tiendas en línea, ofrezco soluciones escalables para empresas en Colombia.
+              Construimos sitios web profesionales con WordPress, optimizados con Yoast SEO y personalizados con Elementor. Desde blogs hasta tiendas en línea, ofrecemos soluciones escalables para empresas en Villavicencio y todo Colombia.
             </p>
           </div>
           <div class="service-item">
             <h3 data-i18n="services.seo.title">Optimización SEO</h3>
             <p data-i18n="services.seo.text">
-              Mejoro la visibilidad de tu sitio web en Google con estrategias de SEO local y técnico. Desde la optimización de palabras clave hasta la velocidad de carga, aseguro que tu negocio en Villavicencio sea encontrado fácilmente.
+              Mejoramos la visibilidad de tu sitio web en Google con estrategias de SEO local y técnico. Desde la optimización de palabras clave hasta la velocidad de carga; nos aseguramos de que tu negocio en Villavicencio sea encontrado fácilmente.
             </p>
           </div>
+        </div>
+        <div style="text-align: center; justify-content: center; align-items: center; display: flexbox; margin-top: 100px;">
           <p data-i18n="services.cta">
-            ¿Listo para transformar tu presencia digital? <a href="#contacto" class="btn">Solicita una Cotización</a>
+            ¿Listo para transformar tu presencia digital? Solicita una Cotización
           </p>
+          <a href="#contacto" class="btn" data-i18n="services.btn">Contáctanos hoy</a>
         </div>
       </section>
 
       <section id="proyectos" class="projects">
-        <h2 class="section-title" data-i18n="projects.title">Proyectos de Desarrollo Web</h2>
+        <h2 class="section-title" data-i18n="projects.title">Proyectos de Diseño y Desarrollo Web</h2>
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-header">
-              <h3 data-i18n="projects.portfolio.title">Portafolio Personal</h3>
+              <h3 data-i18n="projects.portfolio.title">Portafolio</h3>
               <p data-i18n="projects.portfolio.description">
-                Diseñé y desarrollé mi propio sitio web como portafolio, un proyecto responsivo que muestra mis habilidades en HTML, CSS y JavaScript. Este sitio está optimizado para SEO y ofrece una experiencia de usuario fluida, ideal para destacar en Villavicencio.
+                Diseñamos y desarrollamos nuestro propio sitio web como portafolio, un proyecto responsivo que muestra nuestras habilidades en HTML, CSS y JavaScript. Este sitio está optimizado para SEO y ofrece una experiencia de usuario fluida, ideal para destacar en Villavicencio.
               </p>
             </div>
             <ul class="tech-stack">
@@ -236,7 +244,7 @@
             <div class="project-header">
               <h3 data-i18n="projects.wonder.title">Wonder Nails - Spa</h3>
               <p data-i18n="projects.wonder.description">
-                Desarrollé un sitio web moderno y responsivo para Wonder Nails Spa en Villavicencio. Con un diseño atractivo, animaciones suaves y una API de reservas integrada, este proyecto mejora la presencia digital del negocio y facilita la interacción con los clientes.
+                Desarrollamos un sitio web moderno y responsivo para Wonder Nails Spa en Villavicencio. Con un diseño atractivo, animaciones suaves y una API de reservas integrada, este proyecto mejora la presencia digital del negocio y facilita la interacción con los clientes.
               </p>
             </div>
             <ul class="tech-stack">
@@ -254,7 +262,7 @@
             <div class="project-header">
               <h3 data-i18n="projects.bloom.title">Bloom Luxury - Spa</h3>
               <p data-i18n="projects.bloom.description">
-                Creé una landing page elegante y responsiva para Bloom Luxury Spa en Villavicencio. Este proyecto destaca por su diseño limpio, navegación intuitiva y optimización para dispositivos móviles, ayudando al spa a atraer más clientes locales.
+                Creamos una landing page elegante y responsiva para Bloom Luxury Spa en Villavicencio. Este proyecto destaca por su diseño limpio, navegación intuitiva y optimización para dispositivos móviles, ayudando al spa a atraer más clientes locales.
               </p>
             </div>
             <ul class="tech-stack">
@@ -272,9 +280,9 @@
       </section>
 
       <section id="contacto" class="contact">
-        <h2 class="section-title" data-i18n="contact.title">Contáctame Hoy</h2>
+        <h2 class="section-title" data-i18n="contact.title">Contáctanos Hoy</h2>
         <p class="contact-text" data-i18n="contact.text">
-          ¿Buscas un desarrollador web en Villavicencio para crear o mejorar tu sitio web? Estoy aquí para ayudarte. Ofrezco soluciones personalizadas de diseño y desarrollo web que impulsan tu negocio. Escríbeme por correo, WhatsApp o llámame, y empecemos a trabajar en tu proyecto. ¡Responderé lo antes posible!
+          ¿Buscas desarrolladores web en Villavicencio para crear o mejorar tu sitio web? Estamos aquí para ayudarte. Ofrecemos soluciones personalizadas de diseño y desarrollo web que impulsan tu negocio. Escríbenos por correo o WhatsApp y empecemos a trabajar en tu proyecto. ¡Responderemos lo antes posible!
         </p>
         <div class="contact-container">
           <a href="#" class="contact-btn" id="say-hello" data-i18n="contact.cta">Inicia Tu Proyecto</a>
@@ -287,7 +295,7 @@
           <p>Web Dev By Cam<br>Villavicencio, Meta, Colombia<br>
         </div>
         <div class="contact-form-container">
-          <h3 data-i18n="contact.form.title">Envíame un Mensaje Directo</h3>
+          <h3 data-i18n="contact.form.title">Envíanos un Mensaje Directo</h3>
           <form id="contact-form" name="contacto" data-netlify="true" netlify-honeypot="bot-field" method="POST" action="/thank-you.html">
             <input type="hidden" name="form-name" value="contacto">
             <p class="hidden">
