@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@netlify/next": "^1.4.9",
+    "@netlify/plugin-nextjs": "^5.11.4",
     "animejs": "^4.0.2",
     "next": "15.3.5",
     "postcss": "^8.5.6",
