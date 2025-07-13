@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --color-cosmic-deep: #0A0A23;
+  --color-cosmic-purple: #1A0B2E;
+  --color-cosmic-violet: #16213E;
+  --color-energy-cyan: #00F5FF;
+  --color-energy-magenta: #FF00FF;
+  --color-energy-purple: #8A2BE2;
+  --color-mystical-blue: #4169E1;
+  --color-mystical-pink: #FF1493;
+  --color-mystical-gold: #FFD700;
+  --color-neutral-white: #FFFFFF;
+  --color-neutral-gray: #A0A0A0; /* Adjusted for better contrast */
+  --color-neutral-black: #000000;
+}
+
+body {
+  @apply bg-cosmic-deep text-neutral-white font-inter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-orbitron;
+}
+
+code, pre {
+  @apply font-jetbrains;
+}
